@@ -12,7 +12,7 @@
 
 <div class="container">
   <div class="top__title text-center">
-    All Products
+    All Productstest
   </div>
   <div class="row">
     @foreach ($products as $product)
