@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateDeliveriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('deliveries', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->comment('ユーザー名');
-            $table->string('email')->unique()->comment('メールアドレス');;
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password')->comment('パスワード');
-            $table->rememberToken();
             $table->timestamps();
             $table->softDeletes('deleted_at');
             $table->text('company')->comment('会社名');
+            $table->text('address')->comment('住所');
+            $table->string('tel')->comment('電話番号');
+            $table->text('name')->comment('名前');
+            $table->string('email')->comment('メールアドレス');
         });
     }
 
@@ -33,6 +32,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('deliveries');
     }
 }
