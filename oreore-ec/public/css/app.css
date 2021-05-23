@@ -10954,6 +10954,112 @@ a.text-dark:focus {
   width: 100%;
 }
 
+/***** Import Common Settings  *****/
+
+.navbar-green {
+  background: #78a663;
+  color: #fff;
+}
+
+.navbar-green a {
+  color: #fff;
+}
+
+.icon-white {
+  color: #fff;
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+li.nav-item {
+  padding-left: 20px;
+}
+
+a.nav-link {
+  position: relative;
+  padding-left: 10px;
+}
+
+i.material-icons.cartColor,
+i.cartColor.material-icons-two-tone,
+i.cartColor.material-icons-sharp,
+i.cartColor.material-icons-round,
+i.cartColor.material-icons-outlined {
+  position: absolute;
+  left: -20px;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+}
+
+.product-index .hour,
+.product-index .minute,
+.product-index .seconds {
+  font-size: 22px;
+  padding: 3px;
+  background-color: orange;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 3px;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.product-index .modal-dialog .input-group {
+  justify-content: flex-end;
+  margin-right: 16px;
+}
+
+.btn-ash {
+  background-color: #5a6268;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.head {
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 10px 0;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.auth-login .form-login {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.btn-green {
+  background-color: #325927;
+  color: #fff;
+}
+
+.text-green {
+  color: #325927;
+}
+
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
