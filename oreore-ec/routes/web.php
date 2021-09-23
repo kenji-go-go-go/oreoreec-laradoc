@@ -31,8 +31,11 @@ Route::name('line_item.')
 Route::name('cart.')
     ->group(function () {
         Route::get('/cart', 'CartController@index')->name('index');
+        Route::get('/delivery-address', 'CartController@delivery-address')->name('delivery-address');
     });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('/delivery-address', 'ProductController@index')->name('index');

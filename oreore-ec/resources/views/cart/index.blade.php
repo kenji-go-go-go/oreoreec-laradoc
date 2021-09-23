@@ -18,6 +18,10 @@
       onclick="location.href='https://ichiichiban.anti-pattern.co.jp/delivery-address'">
       注文する
     </button>
+    <button type="button" class="btn btn-danger"
+      onclick="location.href='{{url('/delivery-address')}}'">
+      注文する
+    </button>
   </div>
   <div class="cart-wrapper">
     @foreach ($line_items as $item)

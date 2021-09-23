@@ -8,7 +8,7 @@
 <div class="container">
   @if(count($line_items) > 0)
   <div class="head">
-    このまま買い物を続けますか？
+    このまま買い物を続けますか？???
   </div>
   <div class="text-center">
     <button type="button" class="btn btn-ash" onclick="location.href='{{ url('/') }}'">
